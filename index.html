@@ -2,26 +2,257 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>电影分享</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>胶片记忆</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
-  <div class="container">
-  <div class="jumbotron">
-  <h1>电影分享</h1>
-  <p>所有精彩的电影都以黑色开头</p>
-  <p>所有感人的电影都以白色结尾</p>
+<!导航>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+      <img src="胶片.png" height="50" width="100"></img>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">精选</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         器材
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="#">傻瓜胶片机</a>
+           <a class="dropdown-item" href="#">机械单反胶片机</a>
+           <a class="dropdown-item" href="#">电子单反胶片机</a>
+           <a class="dropdown-item" href="#">旁轴胶片机</a>
+         </div>
+       </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">服务</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  </div>
-    <h2><u>龙猫</u></h2>
-    <img src="龙猫.jpg" width="300" height="150"></img><br>
-    <a href="https://baike.baidu.com/item/%E9%BE%99%E7%8C%AB/12015836?fr=aladdin">详情介绍</ a>
-    <h2><u>夏目友人帐</u></h2>
-    <img src="夏目友人帐.jpg" width="300" height="150"></img><br>
-    <a href="https://baike.baidu.com/item/%E5%A4%8F%E7%9B%AE%E5%8F%8B%E4%BA%BA%E5%B8%90%20%EF%BD%9E%E7%BC%98%E7%BB%93%E7%A9%BA%E8%9D%89%EF%BD%9E/22605371?fromtitle=%E5%A4%8F%E7%9B%AE%E5%8F%8B%E4%BA%BA%E5%B8%90&fromid=22155446">详情介绍</ a>
+</nav>
 
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+<!轮播图>
+  <div class="bd-example" style="margin-top:4rem;">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="轮播1.png" class="d-block w-100 img-fluid" height="400" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First film</h5>
+          <p>If you shed tears when you miss the sun, you also miss the stars.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="轮播2.jpg" class="d-block w-100 img-fluid" height="400" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second film</h5>
+          <p>The world is more interesting with you in it.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="轮播3.jpg" class="d-block w-100 img-fluid" height="400" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third film</h5>
+          <p>The time that my journey takes is long and the way of it long.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!列表1>
+<div class="album py-5 bg-light">
+<div class="card-deck" style="margin-top:4rem;margin-left:3rem;margin-right:3rem">
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="om1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">奥林巴斯OM-1</h5>
+    <p class="card-text">Olympus OM-1是1973年推出，在当时号称是世界上最小的35mm SLR。</p>
+  </div>
+  <div class="card-body">
+    <p class="font-weight-light"><a href="https://www.bilibili.com/video/av77868623" class="card-link text-reset">详情测评</a>
+    <a href="https://baike.baidu.com/item/%E5%A5%A5%E6%9E%97%E5%B7%B4%E6%96%AFOM-1/7039873?fr=aladdin" class="card-link text-reset">了解更多</a>
+  </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+</div>
+</div>
+<!列表2>
+<div class="album py-5">
+<div class="card-deck" style="margin-top:4rem;margin-left:3rem;margin-right:3rem">
+<div class="card shadow p-3 mb-5 bg-white rounded">
+    <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build.</p>
+    </div>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+</div>
+</div>
+<!列表3>
+<div class="album py-5 bg-light">
+<div class="card-deck" style="margin-top:4rem;margin-left:3rem;margin-right:3rem">
+<div class="card shadow p-3 mb-5 bg-white rounded">
+    <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build.</p>
+    </div>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+  <img class="card-img-top" src="轮播1.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build.</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+<footer class="text-muted bg-dark" style="padding-top:4rem;padding-bottom:1rem;padding-right:4rem;padding-left:4rem;">
+   <div class="container-fluid">
+     <p class="float-right">
+       <a class="btn btn-secondary" href="#" role="button">Back to top</a>
+     </p>
+     <div class="col-md-6">
+     <p class="text-white-50">“胶片很感性，它给的信息不多但却饱含情感。”</p>
+     <p>胶片总是能给人带来一种莫名的感动，仿佛一切都乘时光机回到了过去，实体感的照片，简单又老式，就很美好。</p>
+     </div>
+     <br>
+   <div class="col-md-14">
+   <hr align=center width=1000 color=#C0C0C0 size=1>
+    <p class="font-italic">@胶片记忆</p>
+   </div>
+ </div>
+ </footer>
+
+
+
+  </body>
 </html>
